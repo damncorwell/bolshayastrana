@@ -41,6 +41,7 @@ export default {
 
       if (!this.errors.length) {
         const comment = {
+          id: Date.now(),
           body: this.comment_text.trim(),
           created_at: new Date().toISOString(),
           author: {
